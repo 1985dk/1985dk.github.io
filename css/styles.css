@@ -1,0 +1,627 @@
+/* FONTS
+
+		font-family: 'Shrikhand', cursive;
+		font-family: 'Abril Fatface', cursive;
+		font-family: 'Passion One', cursive;
+
+		*/
+/**
+ * Allows you to use retina images at various pixel densities.
+ * Examples:
+ *
+ *   @include retina(/images/mypic.jpg, 2);
+ *   @include retina(/images/mypic.jpg, 3, 100px 100px, left top no-repeat transparent);
+ *
+ * @param  {Value}  $path               The path to the file name minus extension.
+ * @param  {Number} $cap:    2          The highest pixel density level images exist for.
+ * @param  {Value}  $size:   auto auto  The intended width of the rendered image.
+ * @param  {Value}  $extras: null       Any other `background` values to be added.
+ */
+html {
+  height: 100%;
+  min-height: 100%; }
+
+body {
+  min-height: 100%;
+  font-family: 'Shrikhand', cursive;
+  background-color: #fff;
+  /*
+   * Set a counter and get the length of the image path.
+   */
+  /*
+   * Loop ver the image path and figure out the
+   * position of the dot where the extension begins.
+   */
+  /*
+   * If we were able to figure out where the extension is,
+   * slice the path into a base and an extension. Use that to
+   * calculate urls for different density environments. Set
+   * values for different environments.
+   */
+  /*
+     * Set a base background for 1x environments.
+     */
+  background: url("../img/bg.jpg") center center no-repeat;
+  background-size: auto auto;
+  /*
+     * Create an @2x-ish media query.
+     */
+  /*
+     * Create media queries for all environments that the user has
+     * provided images for.
+     */
+  /*
+   * If anything went wrong trying to separate the file from its
+   * extension, set a background value without doing anything to it.
+   */
+  background-size: cover;
+  color: #000; }
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    body {
+      background: url("../img/bg@2x.jpg") center center no-repeat;
+      background-size: auto auto; } }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+      background: url("../img/bg@2x.jpg") center center no-repeat;
+      background-size: auto auto; } }
+
+#info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -125px 0 0 -200px;
+  text-align: center;
+  width: 400px;
+  height: 250px;
+  box-sizing: border-box;
+  /*
+   * Set a counter and get the length of the image path.
+   */
+  /*
+   * Loop ver the image path and figure out the
+   * position of the dot where the extension begins.
+   */
+  /*
+   * If we were able to figure out where the extension is,
+   * slice the path into a base and an extension. Use that to
+   * calculate urls for different density environments. Set
+   * values for different environments.
+   */
+  /*
+     * Set a base background for 1x environments.
+     */
+  background: url("../img/halflogo.png") top right no-repeat;
+  background-size: 195px 195px;
+  /*
+     * Create an @2x-ish media query.
+     */
+  /*
+     * Create media queries for all environments that the user has
+     * provided images for.
+     */
+  /*
+   * If anything went wrong trying to separate the file from its
+   * extension, set a background value without doing anything to it.
+   */
+  padding: 0 10px 0 10px;
+  -webkit-box-shadow: 0 0 200px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 200px 0 rgba(0, 0, 0, 0.4); }
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    #info {
+      background: url("../img/halflogo@2x.png") top right no-repeat;
+      background-size: 195px 195px; } }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    #info {
+      background: url("../img/halflogo@2x.png") top right no-repeat;
+      background-size: 195px 195px; } }
+
+#info span {
+  font-size: 2em; }
+
+#info p {
+  margin: 10px 0 10px 0; }
+
+h1 {
+  color: #57585b;
+  text-align: left;
+  font-size: 1.9em;
+  font-family: 'Shrikhand', cursive;
+  height: 120px;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  padding-top: 100px; }
+
+h2 {
+  font-family: 'Abril Fatface', cursive;
+  height: 40px;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  padding-top: 10px;
+  color: #a1a092;
+  text-align: left;
+  font-size: 1.5em;
+  margin: 0 0 10px 0;
+  border-bottom: dotted 1px #a1a092; }
+
+#logo {
+  /*
+   * Set a counter and get the length of the image path.
+   */
+  /*
+   * Loop ver the image path and figure out the
+   * position of the dot where the extension begins.
+   */
+  /*
+   * If we were able to figure out where the extension is,
+   * slice the path into a base and an extension. Use that to
+   * calculate urls for different density environments. Set
+   * values for different environments.
+   */
+  /*
+     * Set a base background for 1x environments.
+     */
+  background: url("../img/cc-logo-infinity.png") top left no-repeat;
+  background-size: 150px 68px;
+  /*
+     * Create an @2x-ish media query.
+     */
+  /*
+     * Create media queries for all environments that the user has
+     * provided images for.
+     */
+  /*
+   * If anything went wrong trying to separate the file from its
+   * extension, set a background value without doing anything to it.
+   */
+  width: 150px;
+  height: 68px;
+  float: left;
+  margin: 0 10px 0 0;
+  padding: 0 10px 0 0;
+  border-right: dotted 1px #a1a092; }
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    #logo {
+      background: url("../img/cc-logo-infinity@2x.png") top left no-repeat;
+      background-size: 150px 68px; } }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    #logo {
+      background: url("../img/cc-logo-infinity@2x.png") top left no-repeat;
+      background-size: 150px 68px; } }
+
+#logo span {
+  display: none; }
+
+#contact {
+  float: left;
+  text-align: left;
+  font-family: 'Passion One', cursive; }
+
+#contact div {
+  height: 20px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 1px;
+  margin-bottom: 4px;
+  padding-left: 30px;
+  padding-top: 2px;
+  background-repeat: no-repeat;
+  background-position: top left; }
+
+#contact div a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: inline-block; }
+
+/*
+		#contact div a:after {
+		  display: block;
+		  position: absolute;
+		  left: 30px;
+		  bottom: 0px;
+		  width: 0;
+		  height: 0px;
+		  border-bottom: $border-style;
+		  content: "";
+		  -webkit-transition: all 0.2s;
+		  -moz-transition: all 0.2s;
+		  -o-transition: all 0.2s;
+		  transition: all 0.2s;
+		}
+		#contact div a:hover:after {
+		  width: 83%;
+		}
+*/
+#contact div#contact-phone a:hover, #contact div#contact-email a:hover {
+  color: #57585b; }
+
+#contact div#contact-www a:hover {
+  color: #000; }
+
+#contact-phone {
+  color: #a1a092;
+  /*
+   * Set a counter and get the length of the image path.
+   */
+  /*
+   * Loop ver the image path and figure out the
+   * position of the dot where the extension begins.
+   */
+  /*
+   * If we were able to figure out where the extension is,
+   * slice the path into a base and an extension. Use that to
+   * calculate urls for different density environments. Set
+   * values for different environments.
+   */
+  /*
+     * Set a base background for 1x environments.
+     */
+  background: url("../img/phone.png") top left no-repeat;
+  background-size: 20px 20px;
+  /*
+     * Create an @2x-ish media query.
+     */
+  /*
+     * Create media queries for all environments that the user has
+     * provided images for.
+     */
+  /*
+   * If anything went wrong trying to separate the file from its
+   * extension, set a background value without doing anything to it.
+   */ }
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    #contact-phone {
+      background: url("../img/phone@2x.png") top left no-repeat;
+      background-size: 20px 20px; } }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    #contact-phone {
+      background: url("../img/phone@2x.png") top left no-repeat;
+      background-size: 20px 20px; } }
+
+#contact-email {
+  color: #a1a092;
+  /*
+   * Set a counter and get the length of the image path.
+   */
+  /*
+   * Loop ver the image path and figure out the
+   * position of the dot where the extension begins.
+   */
+  /*
+   * If we were able to figure out where the extension is,
+   * slice the path into a base and an extension. Use that to
+   * calculate urls for different density environments. Set
+   * values for different environments.
+   */
+  /*
+     * Set a base background for 1x environments.
+     */
+  background: url("../img/email.png") top left no-repeat;
+  background-size: 20px 20px;
+  /*
+     * Create an @2x-ish media query.
+     */
+  /*
+     * Create media queries for all environments that the user has
+     * provided images for.
+     */
+  /*
+   * If anything went wrong trying to separate the file from its
+   * extension, set a background value without doing anything to it.
+   */ }
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    #contact-email {
+      background: url("../img/email@2x.png") top left no-repeat;
+      background-size: 20px 20px; } }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    #contact-email {
+      background: url("../img/email@2x.png") top left no-repeat;
+      background-size: 20px 20px; } }
+
+#contact-www {
+  color: #57585b;
+  /*
+   * Set a counter and get the length of the image path.
+   */
+  /*
+   * Loop ver the image path and figure out the
+   * position of the dot where the extension begins.
+   */
+  /*
+   * If we were able to figure out where the extension is,
+   * slice the path into a base and an extension. Use that to
+   * calculate urls for different density environments. Set
+   * values for different environments.
+   */
+  /*
+     * Set a base background for 1x environments.
+     */
+  background: url("../img/fave.png") top left no-repeat;
+  background-size: 20px 20px;
+  /*
+     * Create an @2x-ish media query.
+     */
+  /*
+     * Create media queries for all environments that the user has
+     * provided images for.
+     */
+  /*
+   * If anything went wrong trying to separate the file from its
+   * extension, set a background value without doing anything to it.
+   */ }
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    #contact-www {
+      background: url("../img/fave@2x.png") top left no-repeat;
+      background-size: 20px 20px; } }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    #contact-www {
+      background: url("../img/fave@2x.png") top left no-repeat;
+      background-size: 20px 20px; } }
+
+#social {
+  position: absolute;
+  width: 260px;
+  height: 50px;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -130px;
+  background: #f9f4de;
+  border-radius: 0px;
+  -webkit-box-shadow: 0 0 500px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 500px 0 rgba(0, 0, 0, 0.4);
+  opacity: 0.2;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+#social:hover {
+  opacity: 1; }
+
+#social ul li {
+  float: left;
+  width: 42px;
+  margin: 10px 5px 0 5px;
+  text-align: center; }
+  #social ul li img {
+    width: auto;
+    max-height: 32px; }
+  #social ul li a {
+    opacity: 0.7;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  #social ul li a:hover {
+    opacity: 0.9; }
+
+/* --- iPhone MQ */
+@media only screen and (max-width: 767px) {
+  #info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -125px;
+    text-align: center;
+    width: 250px;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 10px;
+    -webkit-box-shadow: 0 0 500px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 500px 0 rgba(0, 0, 0, 0.4); }
+  #info span {
+    font-size: 2em; }
+  #info p {
+    margin: 10px 0 10px 0; }
+  h1 {
+    color: #58585b;
+    text-align: left;
+    font-size: 1.7em;
+    font-family: 'Shrikhand', cursive;
+    height: 110px;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    padding-top: 100px; }
+  h2 {
+    font-family: 'Shrikhand', cursive;
+    height: 40px;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    padding-top: 45px;
+    padding-bottom: 25px;
+    color: #a1a092;
+    text-align: left;
+    font-size: 1.1em;
+    font-family: 'Abril Fatface', cursive;
+    border-bottom: none;
+    margin: 0 0 0px 0; }
+  #logo {
+    /*
+   * Set a counter and get the length of the image path.
+   */
+    /*
+   * Loop ver the image path and figure out the
+   * position of the dot where the extension begins.
+   */
+    /*
+   * If we were able to figure out where the extension is,
+   * slice the path into a base and an extension. Use that to
+   * calculate urls for different density environments. Set
+   * values for different environments.
+   */
+    /*
+     * Set a base background for 1x environments.
+     */
+    background: url("../img/cc-logo-infinity.png") center center no-repeat;
+    background-size: 150px 68px;
+    /*
+     * Create an @2x-ish media query.
+     */
+    /*
+     * Create media queries for all environments that the user has
+     * provided images for.
+     */
+    /*
+   * If anything went wrong trying to separate the file from its
+   * extension, set a background value without doing anything to it.
+   */
+    width: 230px;
+    height: 107px;
+    margin: 0 auto 0 auto;
+    box-sizing: border-box;
+    border-bottom: dotted 1px #a1a092;
+    border-top: dotted 1px #a1a092;
+    border-right: none;
+    float: none; } }
+  @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    #logo {
+      background: url("../img/cc-logo-infinity@2x.png") center center no-repeat;
+      background-size: 150px 68px; } }
+
+@media only screen and (max-width: 767px) {
+  #logo span {
+    display: none; }
+  #contact {
+    margin-top: 20px;
+    float: none;
+    text-align: left;
+    font-family: 'Passion One', cursive; }
+  #contact div {
+    height: 20px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 1px;
+    margin-bottom: 4px;
+    padding-left: 30px;
+    padding-top: 2px;
+    background-repeat: no-repeat;
+    background-position: top left; }
+  #contact div a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  #contact div a:hover {
+    color: #000; }
+  #contact-phone {
+    color: #a1a092;
+    /*
+   * Set a counter and get the length of the image path.
+   */
+    /*
+   * Loop ver the image path and figure out the
+   * position of the dot where the extension begins.
+   */
+    /*
+   * If we were able to figure out where the extension is,
+   * slice the path into a base and an extension. Use that to
+   * calculate urls for different density environments. Set
+   * values for different environments.
+   */
+    /*
+     * Set a base background for 1x environments.
+     */
+    background: url("../img/phone.png") top left no-repeat;
+    background-size: 20px 20px;
+    /*
+     * Create an @2x-ish media query.
+     */
+    /*
+     * Create media queries for all environments that the user has
+     * provided images for.
+     */
+    /*
+   * If anything went wrong trying to separate the file from its
+   * extension, set a background value without doing anything to it.
+   */ } }
+  @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    #contact-phone {
+      background: url("../img/phone@2x.png") top left no-repeat;
+      background-size: 20px 20px; } }
+
+@media only screen and (max-width: 767px) {
+  #contact-email {
+    color: #a1a092;
+    /*
+   * Set a counter and get the length of the image path.
+   */
+    /*
+   * Loop ver the image path and figure out the
+   * position of the dot where the extension begins.
+   */
+    /*
+   * If we were able to figure out where the extension is,
+   * slice the path into a base and an extension. Use that to
+   * calculate urls for different density environments. Set
+   * values for different environments.
+   */
+    /*
+     * Set a base background for 1x environments.
+     */
+    background: url("../img/email.png") top left no-repeat;
+    background-size: 20px 20px;
+    /*
+     * Create an @2x-ish media query.
+     */
+    /*
+     * Create media queries for all environments that the user has
+     * provided images for.
+     */
+    /*
+   * If anything went wrong trying to separate the file from its
+   * extension, set a background value without doing anything to it.
+   */ } }
+  @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    #contact-email {
+      background: url("../img/email@2x.png") top left no-repeat;
+      background-size: 20px 20px; } }
+
+@media only screen and (max-width: 767px) {
+  #contact-www {
+    color: #57585b;
+    /*
+   * Set a counter and get the length of the image path.
+   */
+    /*
+   * Loop ver the image path and figure out the
+   * position of the dot where the extension begins.
+   */
+    /*
+   * If we were able to figure out where the extension is,
+   * slice the path into a base and an extension. Use that to
+   * calculate urls for different density environments. Set
+   * values for different environments.
+   */
+    /*
+     * Set a base background for 1x environments.
+     */
+    background: url("../img/fave.png") top left no-repeat;
+    background-size: 20px 20px;
+    /*
+     * Create an @2x-ish media query.
+     */
+    /*
+     * Create media queries for all environments that the user has
+     * provided images for.
+     */
+    /*
+   * If anything went wrong trying to separate the file from its
+   * extension, set a background value without doing anything to it.
+   */ } }
+  @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    #contact-www {
+      background: url("../img/fave@2x.png") top left no-repeat;
+      background-size: 20px 20px; } }
